@@ -1,21 +1,32 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-   background-color: #f4f4f4;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: #f4f4f4;
 }
 
 .page-wrapper {
   max-width: 900px;
   margin: 0 auto;
   padding: 20px;
+  background-color: white;
+}
 
-  .hero-section img {
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.title-section,
+.hero-section,
+.article-section,
+.recipe-section,
+.author-section {
+  margin-bottom: 30px;
+}
+
+.hero-section img {
   width: 100%;
   display: block;
 }
@@ -35,4 +46,18 @@ header {
   display: flex;
   align-items: center;
   gap: 15px;
+}
+
+.author-section img {
+  width: 70px;
+  height: auto;
+}
+
+.author-text {
+  flex: 1;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
 }
