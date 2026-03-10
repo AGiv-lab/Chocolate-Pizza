@@ -1,3 +1,4 @@
+Best “last pass” version
 * {
   box-sizing: border-box;
 }
@@ -9,9 +10,9 @@ body {
 }
 
 .page-wrapper {
-  max-width: 850px;
+  max-width: 900px;
   margin: 40px auto;
-  padding: 20px 30px;
+  padding: 20px;
   background-color: white;
   border: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
@@ -21,100 +22,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
-}
-
-.title-section h2 {
-  font-size: 40px;
-  margin-bottom: 5px;
-}
-
-.title-section p {
-  color: gray;
-  font-size: 12px;
-  text-transform: uppercase;
-}
-
-.hero-section,
-.article-section,
-.recipe-section,
-.author-section {
-  margin-bottom: 30px;
-}
-
-.hero-section img {
-  width: 100%;
-  display: block;
-}
-
-.article-section p {
-  line-height: 1.6;
-  margin-bottom: 16px;
-}
-
-.recipe-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-
-  background-image: url("img/list-bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  padding: 30px 40px;
-}
- 
-.recipe-section p {
-  margin: 8px 0;
-}
-
-.author-section {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  border-top: 1px solid #ddd;
-  padding-top: 20px;
-}
-
-.author-section img {
-  width: 70px;
-  height: auto;
-}
-
-.author-text {
-  flex: 1;
-}
-
-.article-section p {
-  line-height: 1.7;
-  margin-bottom: 18px;
-  text-indent: 20px;
-}
-
-.author-section button {
-  margin-left: auto;
-  padding: 10px 16px;
-  background-color: #c75c2e;
-  color: white;
-  border: none;
-  font-weight: bold;
-}
-
-button {
-  padding: 10px 18px;
-  background-color: #c55;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-footer {
-  text-align: center;
-  margin-top: 40px;
-}
-
-footer img {
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .logo-area {
@@ -124,13 +32,18 @@ footer img {
 }
 
 .logo-area img {
-  width: 42px;
-  height: auto;
+  width: 40px;
+  display: block;
+}
+
+.logo-text h1 {
+  margin: 0;
+  line-height: 1;
 }
 
 .logo-text p {
-  margin: 0;
-  font-size: 12px;
+  margin: 2px 0 0;
+  font-size: 11px;
   color: gray;
 }
 
@@ -146,37 +59,124 @@ footer img {
 }
 
 .icon-gap {
-  width: 10px;
   display: inline-block;
+  width: 10px;
 }
 
 .divider {
   width: 100%;
   display: block;
-  margin: 20px 0;
+  margin: 25px 0;
 }
 
 .title-section {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  margin-bottom: 25px;
+}
+
+.title-section h2 {
+  margin: 0;
+  font-size: 40px;
+}
+
+.title-section p {
+  margin: 5px 0 0;
+  color: gray;
+  font-size: 12px;
 }
 
 .print-area {
   display: flex;
   align-items: center;
   gap: 6px;
-  font-size: 12px;
   color: gray;
+  font-size: 12px;
 }
 
 .print-area img {
   width: 16px;
-  height: 16px;
 }
 
-.divider {
+.hero-section,
+.article-section,
+.recipe-section,
+.author-section {
+  margin-bottom: 30px;
+}
+
+.hero-section img {
   width: 100%;
-  margin: 25px 0;
   display: block;
+}
+
+.article-section p {
+  line-height: 1.7;
+  margin-bottom: 18px;
+  text-indent: 20px;
+}
+
+.recipe-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  background-image: url("img/list-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 30px;
+}
+
+.recipe-left,
+.recipe-right {
+  padding: 5px 10px;
+}
+
+.recipe-section p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.author-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.author-section img {
+  width: 70px;
+  height: auto;
+}
+
+.author-text {
+  flex: 1;
+}
+
+.author-section button {
+  margin-left: auto;
+}
+
+button {
+  padding: 10px 18px;
+  background-color: #c75c2e;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer img {
+  margin-bottom: 10px;
+}
+
+footer p {
+  margin: 4px 0;
+  font-size: 12px;
+  color: gray;
 }
