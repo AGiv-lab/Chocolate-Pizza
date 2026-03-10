@@ -13,6 +13,8 @@ body {
   margin: 40px auto;
   padding: 20px 30px;
   background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
 }
 
 header {
@@ -54,12 +56,16 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  background: #faf6e9;
-  padding: 25px;
-}
 
+  background-image: url("img/list-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding: 30px 40px;
+}
+ 
 .recipe-section p {
-  margin: 10px 0;
+  margin: 8px 0;
 }
 
 .author-section {
@@ -105,4 +111,72 @@ button {
 footer {
   text-align: center;
   margin-top: 40px;
+}
+
+footer img {
+  margin-bottom: 10px;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-area img {
+  width: 42px;
+  height: auto;
+}
+
+.logo-text p {
+  margin: 0;
+  font-size: 12px;
+  color: gray;
+}
+
+.social-nav {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.social-nav img {
+  width: 20px;
+  height: 20px;
+}
+
+.icon-gap {
+  width: 10px;
+  display: inline-block;
+}
+
+.divider {
+  width: 100%;
+  display: block;
+  margin: 20px 0;
+}
+
+.title-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.print-area {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: gray;
+}
+
+.print-area img {
+  width: 16px;
+  height: 16px;
+}
+
+.divider {
+  width: 100%;
+  margin: 25px 0;
+  display: block;
 }
