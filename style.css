@@ -5,9 +5,9 @@ body {
 }
 
 .page-wrapper {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 20px 30px;
   background-color: white;
 }
 
@@ -18,7 +18,17 @@ header {
   margin-bottom: 30px;
 }
 
-.title-section,
+.title-section h2 {
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.title-section p {
+  color: gray;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
 .hero-section,
 .article-section,
 .recipe-section,
@@ -40,12 +50,20 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+  background: #faf6e9;
+  padding: 25px;
+}
+
+.recipe-section p {
+  margin: 10px 0;
 }
 
 .author-section {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
 }
 
 .author-section img {
@@ -55,6 +73,29 @@ header {
 
 .author-text {
   flex: 1;
+}
+
+.article-section p {
+  line-height: 1.7;
+  margin-bottom: 18px;
+  text-indent: 20px;
+}
+
+.author-section button {
+  margin-left: auto;
+  padding: 10px 16px;
+  background-color: #c75c2e;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 18px;
+  background-color: #c55;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
 footer {
